@@ -5,7 +5,7 @@ interface IRequest {
     description: string;
 }
 
-class CreateSpecificationUseCase {
+export class CreateSpecificationService {
     constructor(private specificationsRepository: ISpecificationsRepository){
 
     }
@@ -22,5 +22,3 @@ class CreateSpecificationUseCase {
         });
     }
 }
-
-export {CreateSpecificationUseCase};

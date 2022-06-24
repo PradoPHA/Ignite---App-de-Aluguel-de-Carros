@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import { ImportCategoryUseCase } from "./ImportCategoryUseCase";
+import { ImportCategoryService } from "./ImportCategoryService";
 
 
 class ImportCategoryController {
-    constructor(private importCategoryUseCase: ImportCategoryUseCase){}
+    constructor(private importCategoryUseCase: ImportCategoryService){}
     handle(request: Request, response: Response): Response{
         const {file} = request;
 

@@ -1,7 +1,7 @@
 import {Category} from "../../model/Category";
 import { ICategoriesRepository, ICreateCategoryDTO } from "../ICategoriesRepository";
 
-class CategoriesRepository implements ICategoriesRepository {
+export class CategoriesRepository implements ICategoriesRepository {
     private categories: Category[];
 
     private static INSTANCE: CategoriesRepository;
@@ -40,5 +40,3 @@ class CategoriesRepository implements ICategoriesRepository {
     }
     
 };
-
-export {CategoriesRepository};
