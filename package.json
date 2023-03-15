@@ -1,13 +1,14 @@
 {
-  "name": "IgniteCapitulo2",
+  "name": "IgniteNode",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "npx ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
   },
   "dependencies": {
-    "@types/node": "^17.0.34",
+    "-": "^0.0.1",
+    "@types/node": "^18.15.3",
     "csv-parse": "4.15.3",
     "express": "^4.17.3",
     "multer": "^1.4.4",
@@ -34,6 +35,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.6.2",
-    "ts-node-dev": "^1.1.8"
+    "ts-node-dev": "^2.0.0"
   }
 }
