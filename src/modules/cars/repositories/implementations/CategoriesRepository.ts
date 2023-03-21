@@ -1,7 +1,8 @@
-import {Category} from "../../model/Category";
+import { Category } from "../../entities/Category";
 import { ICategoriesRepository, ICreateCategoryDTO } from "../ICategoriesRepository";
+import { Repository } from "typeorm";
 
-export class CategoriesRepository implements ICategoriesRepository {
+export class CategoriesRepository extends Repository<Category> implements ICategoriesRepository {
     private categories: Category[];
 
     private static INSTANCE: CategoriesRepository;
