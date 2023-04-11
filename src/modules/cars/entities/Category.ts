@@ -1,6 +1,7 @@
-import { Column, CreateDateColumn, PrimaryColumn } from 'typeorm';
+import { Column, CreateDateColumn, PrimaryColumn, Entity } from 'typeorm';
 import {v4 as uuidV4} from 'uuid';
 
+@Entity("categories")
 export class Category {
     //interrogação: parâmetro OPCIONAL
     @PrimaryColumn()

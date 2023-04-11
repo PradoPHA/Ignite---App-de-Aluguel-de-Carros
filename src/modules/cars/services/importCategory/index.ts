@@ -3,7 +3,7 @@ import { ImportCategoryController } from "./ImportCategoryController";
 import { ImportCategoryService } from "./ImportCategoryService";
 
 
-const categoriesRepository = CategoriesRepository.getInstance();
+const categoriesRepository = null;
 
 const importCategoryService = new ImportCategoryService(categoriesRepository);
 

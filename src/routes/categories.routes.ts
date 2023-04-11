@@ -1,7 +1,7 @@
 import {Router} from "express";
 import multer from "multer";
 
-import {createCategoryController} from '../modules/cars/services/createCategory';
+import createCategoryController from "../modules/cars/services/createCategory/index"
 import { importCategoryController } from "../modules/cars/services/importCategory";
 import { listCategoriesController } from '../modules/cars/services/listCategories';
 
@@ -12,8 +12,8 @@ const upload = multer({
 });
 
 categoriesRoutes.post("/", (request, response) => {
-    console.log("NAU BIXO");
-    return createCategoryController.handle(request, response);
+    console.log("Reload funcionando!");
+    return createCategoryController().handle(request, response);
 });
 
 categoriesRoutes.get("/", (request, response) => {
